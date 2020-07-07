@@ -1,0 +1,6 @@
+timezone: America/New_York
+
+exclude: ['CNAME', 'README.md']
+
+host: localhost
+port: 8080
