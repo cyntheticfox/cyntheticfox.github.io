@@ -1,1 +1,3 @@
-# houstdav000.github.io
+# gh0st.sh
+
+A personal website for playing around with things.
