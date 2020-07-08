@@ -1,0 +1,18 @@
+/* TEAM */
+Owner, operator: David Houston
+Site: https://gh0st.sh/
+Twitter: @SleepCoder64
+Location: Clemson, USA
+
+
+/* THANKS */
+Name: Lily Foster
+Site: https://fooster.io
+
+
+/* SITE */
+Last Update: 2020/07/07
+Language: English (United States)
+Standards: HTML5
+Components: None
+Software: Vim, Inkscape
