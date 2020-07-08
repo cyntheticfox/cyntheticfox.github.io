@@ -1,6 +1,18 @@
+---
+# Site metadata for OpenGraph
+name: gh0st.sh
+url: https://gh0st.sh
+twitter: '@sleepcoder64'
+description: |
+  A simple website (for now)
+
+# Global configuration
 timezone: America/New_York
 
+# Build Configuration
 exclude: ['CNAME', 'README.md']
 
+# Serve Configuration
 host: localhost
 port: 8080
+...
