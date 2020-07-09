@@ -20,8 +20,22 @@
         <!-- === Twitter === -->
         <meta name="twitter:site" content="{{ site.twitter }}">
         <meta name="twitter:card" content="summary_large_image">
+        <!-- === CSS Includes === -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" integrity="sha512-weZatQD41YXNCVn3Bvl2y1iAZqtH/Y+MlAQUwovog1iwj8cbSEpQMeErMnDp9CBlqIo0oxOcOF8GUEoOZYD4Zg==" crossorigin="anonymous">
+        <!-- === JS Includes === -->
+        <script src="https://unpkg.com/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha512-UzofO1xJCmOl9xNdbqkMIaaW5raQxAE8WyMa977+mY2fT001KydNwvqSTJlHy70edjCN0nb20BXIgBgO/oj6MQ==" crossorigin="anonymous"></script>
+{{ page.head }}
     </head>
     <body>
+        <nav class="navbar navbar-exapnd-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index">
+                    <img src="/public/images/gh0st.svg" class="d-inline-block align-top" alt="" loading="lazy">
+                    gh0st.sh
+                </a>
+            </div>
+        </nav>
+
         {{ content }}
     </body>
 </html>
