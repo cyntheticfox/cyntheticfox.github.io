@@ -7,7 +7,7 @@ Location: Clemson, USA
 
 /* THANKS */
 Name: Lily Foster
-Site: https://fooster.io
+Site: https://lily.flowers/
 
 
 /* SITE */
