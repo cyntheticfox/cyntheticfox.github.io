@@ -7,3 +7,37 @@ code {
         font-family: 'Fira Code VF', monospace;
     }
 }
+
+/* Color definitions */
+:root {
+  --term_fg: #BCBCBC;
+  --term_bg: #262626;
+  --term_black: #1C1C1C;
+  --term_red: #AF5F5F;
+  --term_green: #5F875F;
+  --term_yellow: #87875F;
+  --term_blue: #5F87AF;
+  --term_purple: #5F5F87;
+  --term_cyan: #5F8787;
+  --term_white: #6C6C6C;
+  --term_brightBlack: #444444;
+  --term_brightRed: #FF8700;
+  --term_brightGreen: #87AF87;
+  --term_brightYellow: #FFFFAF;
+  --term_brightBlue: #8FAFD7;
+  --term_brightPurple: #8787AF;
+  --term_brightCyan: #5FAFAF;
+  --term_brightWhite: #FFFFFF;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  background-color: var(--term_bg);
+  color: var(--term_fg);
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin 0;
+}
