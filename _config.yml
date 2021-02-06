@@ -4,13 +4,13 @@ name: gh0st.sh
 url: https://gh0st.sh
 twitter: '@sleepcoder64'
 description: |
-  A simple website (for now)
+  A friendly gh0st.
 
 # Global configuration
 timezone: America/New_York
 
 # Build Configuration
-exclude: ['CNAME', 'README.md']
+exclude: ['.envrc','CNAME', 'shell.nix', 'README.md']
 
 # Serve Configuration
 host: localhost
