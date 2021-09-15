@@ -23,12 +23,13 @@
         packages.site = pkgs.stdenv.mkDerivation {
           name = "houstdav000-site";
           src = ./.;
-          nativeBuildInputs = build-deps;          unpackPhase = ''
+          nativeBuildInputs = build-deps;
+          unpackPhase = ''
             cp -r $src/* .
           '';
           buildPhase = ''
             jekyll build
-            '';
+          '';
           installPhase = ''
             cp -r _site/ $out
           '';
