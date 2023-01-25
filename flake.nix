@@ -6,34 +6,35 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, ... }@inputs:
-    with inputs;
+  outputs = { self, flake-utils, nixpkgs }:
+
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages."${system}";
-        build-deps = with pkgs; [
-          jekyll
-        ];
+
+        build-deps = with pkgs; [ jekyll ];
       in
-      rec {
-        devShell = pkgs.mkShell {
-          buildInputs = build-deps;
+      {
+        devShells.default = pkgs.mkShell {
+          packages = build-deps;
         };
 
-        packages.site = pkgs.stdenv.mkDerivation {
-          name = "houstdav000-site";
-          src = ./.;
-          nativeBuildInputs = build-deps;
-          unpackPhase = ''
-            cp -r $src/* .
-          '';
-          buildPhase = ''
-            jekyll build
-          '';
-          installPhase = ''
-            cp -r _site/ $out
-          '';
+        packages = {
+          default = self.packages."${system}".site;
+
+          site = pkgs.stdenv.mkDerivation {
+            name = "houstdav000-site";
+            src = ./.;
+            nativeBuildInputs = build-deps;
+
+            buildPhase = ''
+              jekyll build
+            '';
+
+            installPhase = ''
+              cp -r _site/ $out
+            '';
+          };
         };
-        defaultPackage = packages.site;
       });
 }
