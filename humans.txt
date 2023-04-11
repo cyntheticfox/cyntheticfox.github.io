@@ -1,8 +1,7 @@
 /* TEAM */
-Owner, operator: David Houston
+Owner, operator: Cynthia Fox
 Site: https://gh0st.sh/
-Twitter: @SleepCoder64
-Location: Clemson, USA
+Location: South Carolina, USA
 
 
 /* THANKS */
@@ -11,8 +10,8 @@ Site: https://lily.flowers/
 
 
 /* SITE */
-Last Update: 2020/07/07
+Last Update: 2023-04-11
 Language: English (United States)
 Standards: HTML5, CSS3
 Components: None
-Software: GitHub Pages, Inkscape, Jekyll, Nix, Vim
+Software: GitHub Pages, Inkscape, Jekyll, Nix, NeoVim
